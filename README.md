@@ -128,4 +128,4 @@ MIT - Use however you want.
 
 ---
 
-Built for personal use. Shared in case it's useful to others.
+**Personal project.** Built for my own use. Shared in case it's useful to you.

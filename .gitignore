@@ -14,3 +14,4 @@
 
 # Local machine-specific overrides (if any)
 config.local
+CLAUDE.md
