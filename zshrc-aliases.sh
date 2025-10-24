@@ -7,7 +7,7 @@
 
 # Ghostty Configuration Aliases
 alias gconfig="$HOME/.config/ghostty/gconfig"
-alias ghostty-config="$HOME/.config/ghostty/interactive-config.sh"
+alias ghostty-warp="$HOME/.config/ghostty/interactive-config.sh"
 alias gconfig-interactive="$HOME/.config/ghostty/interactive-config.sh"
 alias gconfig-switch="$HOME/.config/ghostty/switch-config.sh"
 

@@ -102,7 +102,7 @@ setup_aliases() {
         aliases_block="
 # Ghostty Configuration Aliases
 alias gconfig='$GHOSTTY_DIR/gconfig'
-alias ghostty-config='$GHOSTTY_DIR/interactive-config.sh'
+alias ghostty-warp='$GHOSTTY_DIR/interactive-config.sh'
 alias gconfig-interactive='$GHOSTTY_DIR/interactive-config.sh'
 alias gconfig-switch='$GHOSTTY_DIR/switch-config.sh'
 
@@ -116,7 +116,7 @@ alias gpro='$GHOSTTY_DIR/gconfig pro'
         aliases_block="
 # Ghostty Configuration Aliases
 alias gconfig='$GHOSTTY_DIR/gconfig'
-alias ghostty-config='$GHOSTTY_DIR/interactive-config.sh'
+alias ghostty-warp='$GHOSTTY_DIR/interactive-config.sh'
 alias gconfig-interactive='$GHOSTTY_DIR/interactive-config.sh'
 alias gconfig-switch='$GHOSTTY_DIR/switch-config.sh'
 

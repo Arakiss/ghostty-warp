@@ -1,17 +1,17 @@
 # 🚀 Ghostty Config - Quick Start Guide
 
 ## 📍 Repository
-**GitHub**: https://github.com/Arakiss/ghostty-config (Private)
+**GitHub**: https://github.com/YOUR-USERNAME/ghostty-warp
 
 ---
 
-## 🆕 Setup on Mac Mini (First Time)
+## 🆕 Setup on New Machine (First Time)
 
 ```bash
 # 1. Clone repository
 cd ~/Projects/personal/dotfiles
-gh repo clone Arakiss/ghostty-config
-cd ghostty-config
+git clone https://github.com/YOUR-USERNAME/ghostty-warp.git
+cd ghostty-warp
 
 # 2. Run setup script
 chmod +x setup.sh
@@ -45,25 +45,25 @@ gconfig current
 
 ### Interactive Configuration
 ```bash
-ghostty-config
+ghostty-warp
 ```
 
 ---
 
 ## 🔄 Syncing Between Machines
 
-### MacBook → GitHub (Push Changes)
+### Primary Machine → GitHub (Push Changes)
 
 ```bash
-cd ~/Projects/personal/dotfiles/ghostty-config
+cd ~/Projects/personal/dotfiles/ghostty-warp
 ./sync-to-repo.sh "Your message"
 git push
 ```
 
-### Mac Mini ← GitHub (Pull Changes)
+### Secondary Machine ← GitHub (Pull Changes)
 
 ```bash
-cd ~/Projects/personal/dotfiles/ghostty-config
+cd ~/Projects/personal/dotfiles/ghostty-warp
 ./sync-from-repo.sh
 ```
 
@@ -71,16 +71,16 @@ cd ~/Projects/personal/dotfiles/ghostty-config
 
 ## 📝 Common Workflows
 
-### Workflow 1: Made Changes on MacBook
+### Workflow 1: Made Changes on Primary Machine
 
 ```bash
-# On MacBook
-cd ~/Projects/personal/dotfiles/ghostty-config
+# On Primary Machine
+cd ~/Projects/personal/dotfiles/ghostty-warp
 ./sync-to-repo.sh "Updated theme colors"
 git push
 
-# On Mac Mini
-cd ~/Projects/personal/dotfiles/ghostty-config
+# On Secondary Machine
+cd ~/Projects/personal/dotfiles/ghostty-warp
 ./sync-from-repo.sh
 # Restart Ghostty
 ```
@@ -95,12 +95,12 @@ vim ~/.config/ghostty/presets/my-preset.conf
 gconfig preset my-preset
 
 # 3. Sync to repo
-cd ~/Projects/personal/dotfiles/ghostty-config
+cd ~/Projects/personal/dotfiles/ghostty-warp
 ./sync-to-repo.sh "Add my-preset"
 git push
 
 # 4. Pull on other machine
-cd ~/Projects/personal/dotfiles/ghostty-config
+cd ~/Projects/personal/dotfiles/ghostty-warp
 ./sync-from-repo.sh
 ```
 
@@ -113,7 +113,7 @@ vim ~/.config/ghostty/config
 # 2. Test changes (restart Ghostty)
 
 # 3. Sync
-cd ~/Projects/personal/dotfiles/ghostty-config
+cd ~/Projects/personal/dotfiles/ghostty-warp
 ./sync-to-repo.sh "Increased font size"
 git push
 ```
@@ -131,7 +131,7 @@ gconfig current
 
 ### Sync conflicts?
 ```bash
-cd ~/Projects/personal/dotfiles/ghostty-config
+cd ~/Projects/personal/dotfiles/ghostty-warp
 git status
 git pull
 # Resolve conflicts manually
@@ -141,7 +141,7 @@ git push
 ### Lost aliases?
 ```bash
 # Re-add to shell
-cat ~/Projects/personal/dotfiles/ghostty-config/zshrc-aliases.sh >> ~/.zshrc
+cat ~/Projects/personal/dotfiles/ghostty-warp/zshrc-aliases.sh >> ~/.zshrc
 source ~/.zshrc
 ```
 
@@ -150,7 +150,7 @@ source ~/.zshrc
 ## 📂 Important Paths
 
 ```
-Repository:     ~/Projects/personal/dotfiles/ghostty-config
+Repository:     ~/Projects/personal/dotfiles/ghostty-warp
 Live Config:    ~/.config/ghostty
 Active Config:  ~/.config/ghostty/config
 Presets:        ~/.config/ghostty/presets/
@@ -169,7 +169,7 @@ Fonts:          ~/.config/ghostty/fonts/
 | `gcozy` | Load Cozy preset |
 | `gpro` | Load Professional preset |
 | `gconfig current` | Show active config |
-| `ghostty-config` | Interactive setup |
+| `ghostty-warp` | Interactive setup |
 | `./sync-to-repo.sh` | Push to GitHub |
 | `./sync-from-repo.sh` | Pull from GitHub |
 
@@ -178,7 +178,7 @@ Fonts:          ~/.config/ghostty/fonts/
 ## 📖 Full Documentation
 
 See `README.md` for complete documentation.
-See `README-original.md` for detailed config explanations.
+See `CONTRIBUTING.md` for contribution guidelines.
 
 ---
 
