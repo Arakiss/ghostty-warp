@@ -110,7 +110,7 @@ All configs are in `~/.config/ghostty/` - modify freely.
 ## Documentation
 
 - **[QUICKSTART.md](QUICKSTART.md)** - Quick reference
-- **[CLAUDE.md](CLAUDE.md)** - AI assistant guide
+- **[FEATURE_COMPARISON.md](FEATURE_COMPARISON.md)** - Warp vs this setup analysis
 - **[CONTRIBUTING.md](CONTRIBUTING.md)** - Contributions welcome
 
 ## Tech Stack
