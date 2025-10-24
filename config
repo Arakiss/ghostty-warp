@@ -1,0 +1,45 @@
+# ==============================================
+# CYBERPUNK DEV PRESET
+# ==============================================
+# Combination: Tokyo Night + Fira Code
+# Perfect for: Modern web development, React/TypeScript, futuristic coding
+# Vibe: Neon-lit coding sessions, cyberpunk aesthetic
+
+# Tokyo Night Theme - CORRECTED
+theme = TokyoNight
+
+# JetBrains Mono Nerd Font - optimizado para ASCII art, Unicode y ligatures
+font-family = JetBrainsMono Nerd Font Mono
+font-size = 13
+font-thicken = true
+font-feature = +calt,+liga
+
+# Optimizaciones para renderizado de caracteres Unicode y ASCII art
+adjust-box-thickness = 1
+adjust-cell-width = 0
+grapheme-width-method = unicode
+
+# Cyberpunk window styling - CORRECTED OPTIONS
+window-padding-x = 16
+window-padding-y = 12
+window-decoration = true
+
+# Futuristic cursor
+cursor-style = bar
+cursor-opacity = 0.9
+
+# Enhanced visual effects
+minimum-contrast = 1.2
+
+# Tokyo Night selection - CORRECTED
+selection-background = #364a82
+
+shell-integration = fish
+
+# AI NOTES FOR CYBERPUNK DEV:
+# - Maximum transparency (0.85) for futuristic glass effect
+# - High blur (25) creates neon glow atmosphere
+# - Fira Code ligatures perfect for modern JS/TS syntax
+# - Enhanced padding showcases the beautiful ligatures
+# - Low unfocused opacity (0.5) creates dramatic focus effect
+keybind = shift+enter=text:\x1b\r

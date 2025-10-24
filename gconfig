@@ -1,0 +1,61 @@
+#!/bin/bash
+# ==============================================
+# GHOSTTY QUICK CONFIGURATION ALIAS
+# ==============================================
+# Super simple alias for instant Ghostty configuration
+# Usage: gconfig [options]
+
+GHOSTTY_DIR="$HOME/.config/ghostty"
+
+# Colors
+CYAN='\033[0;36m'
+YELLOW='\033[1;33m'
+GREEN='\033[0;32m'
+NC='\033[0m'
+
+# Quick help
+if [[ $# -eq 0 ]]; then
+    echo -e "${CYAN}🚀 Ghostty Quick Config${NC}"
+    echo ""
+    echo -e "${YELLOW}Usage:${NC}"
+    echo -e "  ${GREEN}gconfig interactive${NC}  # Full interactive experience"
+    echo -e "  ${GREEN}gconfig switch${NC}       # Command-line switcher"
+    echo -e "  ${GREEN}gconfig status${NC}       # Show current configuration"
+    echo ""
+    echo -e "  ${GREEN}gconfig cyber${NC}        # Quick apply Cyberpunk Dev preset"
+    echo -e "  ${GREEN}gconfig minimal${NC}      # Quick apply Minimal Focus preset"
+    echo -e "  ${GREEN}gconfig cozy${NC}         # Quick apply Cozy Coding preset"
+    echo -e "  ${GREEN}gconfig pro${NC}          # Quick apply Professional Elegant preset"
+    echo ""
+    exit 0
+fi
+
+# Route to appropriate script or action
+case "$1" in
+    "interactive" | "i")
+        exec "$GHOSTTY_DIR/interactive-config.sh"
+        ;;
+    "switch" | "s")
+        shift
+        exec "$GHOSTTY_DIR/switch-config.sh" "$@"
+        ;;
+    "status" | "current")
+        exec "$GHOSTTY_DIR/switch-config.sh" current
+        ;;
+    "cyber" | "cyberpunk")
+        exec "$GHOSTTY_DIR/switch-config.sh" preset cyberpunk-dev
+        ;;
+    "minimal" | "min")
+        exec "$GHOSTTY_DIR/switch-config.sh" preset minimal-focus
+        ;;
+    "cozy")
+        exec "$GHOSTTY_DIR/switch-config.sh" preset cozy-coding
+        ;;
+    "pro" | "professional")
+        exec "$GHOSTTY_DIR/switch-config.sh" preset professional-elegant
+        ;;
+    *)
+        echo -e "${YELLOW}Unknown option: $1${NC}"
+        echo -e "Run ${GREEN}gconfig${NC} without arguments to see available options."
+        ;;
+esac
