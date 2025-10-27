@@ -52,12 +52,12 @@ brew "jq"                        # JSON processor
 # macOS-specific
 # ============================================
 
-# Font installation (optional - install Nerd Fonts manually if needed)
-# tap "homebrew/cask-fonts"
-# cask "font-jetbrains-mono-nerd-font"
-# cask "font-fira-code-nerd-font"
-# cask "font-cascadia-code-nerd-font"
-# cask "font-iosevka-nerd-font"
+# Font installation - Nerd Fonts for all presets
+tap "homebrew/cask-fonts"
+cask "font-jetbrains-mono-nerd-font"
+cask "font-fira-code-nerd-font"
+cask "font-cascadia-code-nerd-font"
+cask "font-iosevka-nerd-font"
 
 # ============================================
 # Notes

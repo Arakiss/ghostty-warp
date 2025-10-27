@@ -29,6 +29,7 @@ So I configured Ghostty with the best open-source terminal tools.
 - **4 Presets**: Cyberpunk Dev, Minimal Focus, Cozy Coding, Professional
 - **5 Themes**: Tokyo Night, Catppuccin Mocha, Dracula, Nord, Gruvbox
 - **4 Fonts**: JetBrains Mono, Fira Code, Cascadia Code, Iosevka (Nerd Fonts)
+- **Auto Font Installation**: Nerd Fonts install automatically with setup
 
 ### Tools
 - **mise** - Universal version manager
@@ -68,6 +69,28 @@ Key features:
 - `CTRL-R` - Fuzzy history search
 - `z <dir>` - Jump to directory
 - Type command → see gray suggestion → press `→` to accept
+
+### Keyboard Shortcuts
+
+All presets include comprehensive keybindings:
+
+**Text & Clipboard**
+- `Shift+Enter` - Multiline commands
+- `Cmd+C` / `Cmd+V` - Copy/Paste
+
+**Navigation**
+- `Cmd+K` - Clear screen
+- `Cmd+T` - New tab
+- `Cmd+1-9` - Jump to tab
+
+**Splits**
+- `Cmd+D` - Vertical split
+- `Cmd+Shift+D` - Horizontal split
+- `Cmd+Shift+Enter` - Toggle zoom
+
+**Font Size**
+- `Cmd++` / `Cmd+-` - Increase/Decrease
+- `Cmd+0` - Reset
 
 ## Sync Across Machines
 
@@ -111,6 +134,7 @@ All configs are in `~/.config/ghostty/` - modify freely.
 
 - **[QUICKSTART.md](QUICKSTART.md)** - Quick reference
 - **[FEATURE_COMPARISON.md](FEATURE_COMPARISON.md)** - Warp vs this setup analysis
+- **[IMPROVEMENTS.md](IMPROVEMENTS.md)** - Recent updates and improvements
 - **[CONTRIBUTING.md](CONTRIBUTING.md)** - Contributions welcome
 
 ## Tech Stack
