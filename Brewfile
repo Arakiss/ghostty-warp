@@ -56,7 +56,7 @@ brew "jq"                        # JSON processor
 tap "homebrew/cask-fonts"
 cask "font-jetbrains-mono-nerd-font"
 cask "font-fira-code-nerd-font"
-cask "font-cascadia-code-nerd-font"
+cask "font-caskaydia-cove-nerd-font"
 cask "font-iosevka-nerd-font"
 
 # ============================================

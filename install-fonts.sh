@@ -27,7 +27,7 @@ echo ""
 FONTS=(
     "font-jetbrains-mono-nerd-font"
     "font-fira-code-nerd-font"
-    "font-cascadia-code-nerd-font"
+    "font-caskaydia-cove-nerd-font"
     "font-iosevka-nerd-font"
 )
 
@@ -50,7 +50,7 @@ echo ""
 echo "📝 Installed fonts:"
 echo "   • JetBrains Mono Nerd Font"
 echo "   • Fira Code Nerd Font"
-echo "   • Cascadia Code Nerd Font"
+echo "   • Caskaydia Cove Nerd Font (Cascadia Code variant)"
 echo "   • Iosevka Nerd Font"
 echo ""
 echo "🎨 These fonts are now available for:"
