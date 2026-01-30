@@ -101,7 +101,7 @@ git pull
 ## Future Improvement Ideas
 
 **Potential Enhancements:**
-- [ ] Global quick terminal keybind (`global:cmd+grave=toggle_quick_terminal`)
+- [x] Global quick terminal keybind (`global:cmd+grave=toggle_quick_terminal`) ✅ Added Jan 2026
 - [ ] URL detection keybinds
 - [ ] Custom color schemes per preset
 - [ ] Screenshot/recording keybinds
