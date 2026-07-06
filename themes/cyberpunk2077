@@ -1,0 +1,37 @@
+# cyberpunk2077 — hand-built ghostty theme from the actual CP2077 UI language
+# (2026-07-06). Not synthwave: near-black cool ground, HUD cyan, alarm red
+# #ff003c, netrunner green, and THE yellow #fcee0a as cursor/selection brand.
+
+background = #0a0b0e
+foreground = #cdd7d9
+
+cursor-color = #fcee0a
+cursor-text = #0a0b0e
+selection-background = #fcee0a
+selection-foreground = #0a0b0e
+
+# black — palette 8 is what TUIs use as "dim gray text": it must stay readable
+# on the near-black background (learned 2026-07-06: #2a2f3a was invisible)
+palette = 0=#12141a
+palette = 8=#5a6578
+# red — CP2077 alarm/damage red
+palette = 1=#ff003c
+palette = 9=#ff5570
+# green — netrunner terminal green
+palette = 2=#2bd94f
+palette = 10=#5ff97f
+# yellow — the brand yellow
+palette = 3=#fcee0a
+palette = 11=#fff65e
+# blue — HUD blue
+palette = 4=#1391d8
+palette = 12=#45b7f7
+# magenta — quickhack purple
+palette = 5=#b46eff
+palette = 13=#cf9bff
+# cyan — scanner/UI cyan
+palette = 6=#02d7f2
+palette = 14=#5ef6ff
+# white
+palette = 7=#a9b4b6
+palette = 15=#eafcfd

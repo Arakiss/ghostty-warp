@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3440" height="1440" viewBox="0 0 3440 1440">
+  <!-- night-city.svg — procedural Cyberpunk 2077-style backdrop (2026-07-06).
+       Deliberately DARK: designed to sit behind terminal text at low opacity. -->
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#04030a"/>
+      <stop offset="0.55" stop-color="#0a0618"/>
+      <stop offset="0.8" stop-color="#140a24"/>
+      <stop offset="1" stop-color="#1b0d2a"/>
+    </linearGradient>
+    <radialGradient id="glowCyan" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#02d7f2" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#02d7f2" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowMagenta" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ff2a6d" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#ff2a6d" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowYellow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fcee0a" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#fcee0a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gridFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#02d7f2" stop-opacity="0"/>
+      <stop offset="1" stop-color="#02d7f2" stop-opacity="0.35"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="3440" height="1440" fill="url(#sky)"/>
+
+  <!-- distant light haze -->
+  <ellipse cx="2600" cy="1050" rx="900" ry="380" fill="url(#glowMagenta)" opacity="0.45"/>
+  <ellipse cx="700" cy="1120" rx="1000" ry="420" fill="url(#glowCyan)" opacity="0.4"/>
+  <ellipse cx="1750" cy="980" rx="520" ry="260" fill="url(#glowYellow)" opacity="0.3"/>
+
+  <!-- skyline: three parallax layers of block towers -->
+  <g fill="#0b0714">
+    <rect x="0" y="880" width="180" height="560"/><rect x="200" y="800" width="140" height="640"/>
+    <rect x="360" y="920" width="220" height="520"/><rect x="600" y="760" width="120" height="680"/>
+    <rect x="740" y="860" width="190" height="580"/><rect x="950" y="700" width="150" height="740"/>
+    <rect x="1120" y="840" width="230" height="600"/><rect x="1370" y="780" width="130" height="660"/>
+    <rect x="1520" y="900" width="200" height="540"/><rect x="1740" y="720" width="160" height="720"/>
+    <rect x="1920" y="850" width="210" height="590"/><rect x="2150" y="760" width="140" height="680"/>
+    <rect x="2310" y="890" width="220" height="550"/><rect x="2550" y="700" width="150" height="740"/>
+    <rect x="2720" y="820" width="200" height="620"/><rect x="2940" y="760" width="160" height="680"/>
+    <rect x="3120" y="880" width="180" height="560"/><rect x="3310" y="800" width="130" height="640"/>
+  </g>
+  <g fill="#120b20">
+    <rect x="80" y="1000" width="260" height="440"/><rect x="420" y="1040" width="300" height="400"/>
+    <rect x="800" y="980" width="240" height="460"/><rect x="1100" y="1060" width="320" height="380"/>
+    <rect x="1500" y="1000" width="260" height="440"/><rect x="1840" y="1050" width="300" height="390"/>
+    <rect x="2220" y="990" width="260" height="450"/><rect x="2560" y="1060" width="320" height="380"/>
+    <rect x="2960" y="1000" width="280" height="440"/><rect x="3280" y="1050" width="160" height="390"/>
+  </g>
+
+  <!-- lit windows: sparse neon dots on the towers -->
+  <g opacity="0.7">
+    <g fill="#02d7f2" opacity="0.5">
+      <rect x="240" y="840" width="8" height="4"/><rect x="270" y="900" width="8" height="4"/>
+      <rect x="990" y="760" width="8" height="4"/><rect x="1020" y="820" width="8" height="4"/>
+      <rect x="1770" y="780" width="8" height="4"/><rect x="1800" y="860" width="8" height="4"/>
+      <rect x="2580" y="760" width="8" height="4"/><rect x="2610" y="840" width="8" height="4"/>
+      <rect x="2970" y="800" width="8" height="4"/><rect x="640" y="820" width="8" height="4"/>
+    </g>
+    <g fill="#fcee0a" opacity="0.45">
+      <rect x="430" y="960" width="8" height="4"/><rect x="1160" y="880" width="8" height="4"/>
+      <rect x="1560" y="940" width="8" height="4"/><rect x="2350" y="930" width="8" height="4"/>
+      <rect x="3150" y="920" width="8" height="4"/><rect x="2050" y="890" width="8" height="4"/>
+    </g>
+    <g fill="#ff2a6d" opacity="0.45">
+      <rect x="770" y="900" width="8" height="4"/><rect x="1400" y="820" width="8" height="4"/>
+      <rect x="1960" y="890" width="8" height="4"/><rect x="2760" y="860" width="8" height="4"/>
+      <rect x="3340" y="850" width="8" height="4"/>
+    </g>
+  </g>
+
+  <!-- neon skyline edge lights -->
+  <g stroke-width="2" opacity="0.6">
+    <line x1="950" y1="700" x2="1100" y2="700" stroke="#02d7f2"/>
+    <line x1="1740" y1="720" x2="1900" y2="720" stroke="#ff2a6d"/>
+    <line x1="2550" y1="700" x2="2700" y2="700" stroke="#fcee0a"/>
+    <line x1="600" y1="760" x2="720" y2="760" stroke="#ff2a6d"/>
+    <line x1="2940" y1="760" x2="3100" y2="760" stroke="#02d7f2"/>
+  </g>
+
+  <!-- perspective grid floor, fading up -->
+  <g stroke="url(#gridFade)" stroke-width="1.5" opacity="0.5">
+    <line x1="1720" y1="1080" x2="-400" y2="1440"/>
+    <line x1="1720" y1="1080" x2="300" y2="1440"/>
+    <line x1="1720" y1="1080" x2="900" y2="1440"/>
+    <line x1="1720" y1="1080" x2="1400" y2="1440"/>
+    <line x1="1720" y1="1080" x2="2040" y2="1440"/>
+    <line x1="1720" y1="1080" x2="2540" y2="1440"/>
+    <line x1="1720" y1="1080" x2="3140" y2="1440"/>
+    <line x1="1720" y1="1080" x2="3840" y2="1440"/>
+    <line x1="0" y1="1150" x2="3440" y2="1150"/>
+    <line x1="0" y1="1230" x2="3440" y2="1230"/>
+    <line x1="0" y1="1330" x2="3440" y2="1330"/>
+  </g>
+</svg>

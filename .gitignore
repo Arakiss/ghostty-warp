@@ -25,3 +25,8 @@ PROMPT.md
 IMPLEMENTATION_PLAN.md
 *.draft.md
 .claude/
+config.bak-*
+backgrounds/.vibe-state
+backgrounds/*.jpg
+backgrounds/*.jpeg
+local.conf

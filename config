@@ -1,48 +1,45 @@
-# Ghostty Configuration — Cross-Platform
-# Managed via gconfig | Supports Linux and macOS
+# ~/.config/ghostty/config — terminal rendering for cmux
+# Hand-curated 2026-07-06 (replaces a generated preset that declared
+# MonaspiceNe Nerd Font Mono, a font that was never installed).
+# Previous config backed up at: config.bak-20260706
 
-# Dynamic theme colors (omarchy theme system — fallback to Tokyo Night)
-config-file = ?"~/.config/omarchy/current/theme/ghostty.conf"
-
-# Fallback theme (used when omarchy theme has no ghostty.conf)
-theme = TokyoNight
-selection-background = #364a82
-selection-foreground = #c0caf5
-
-# Font
-font-family = "JetBrainsMono Nerd Font"
-font-style = Regular
-font-size = 11
+# ── Typography ────────────────────────────────────────────────
+# Chosen for LEGIBILITY, not theme (2026-07-06 — "the mistake was wanting too
+# much cyberpunk"): outline fonts, high x-height, clean at 14pt on retina.
+# Primary: JetBrainsMono NF — chosen after A/B against Maple/Monaspace/Iosevka/
+# SpaceMono/Gohu/BigBlue. Switch with `vibe font <key>`. Fallbacks below;
+# CJK/emoji resolve via CoreText system fallback.
+font-family = MonaspiceNe NF
+font-family = JetBrainsMono NF
+font-family = Maple Mono NF
+font-family = CaskaydiaCove NFM
+font-size = 14
+font-feature = +calt
+font-feature = +liga
+# Bolder stroke — a real legibility win for outline fonts at ~110ppi
 font-thicken = true
 
-# Ligatures
-font-feature = +calt,+liga
+# cmux UI (sidebar and surface tab bar)
+sidebar-font-size = 13
+surface-tab-bar-font-size = 11
 
-# Unicode/box-drawing rendering
+# ── Glyph & TUI rendering ─────────────────────────────────────
+# Solid box-drawing borders and Unicode-based grapheme width: Claude Code /
+# Codex TUIs (braille spinners, box drawing, NF icons) align correctly.
+adjust-box-thickness = 1
 grapheme-width-method = unicode
 
-# Window
-window-padding-x = 14
-window-padding-y = 14
-confirm-close-surface = false
-resize-overlay = never
+# ── Window & cursor ───────────────────────────────────────────
+window-padding-x = 10
+window-padding-y = 8
+cursor-style = bar
 
-# Cursor
-cursor-style = block
-cursor-style-blink = false
+# ── Keybinds ──────────────────────────────────────────────────
+# shift+enter inserts a newline (essential in the Claude Code prompt)
+keybind = shift+enter=text:\x1b\r
 
-# Shell integration (zsh, no cursor override)
-shell-integration-features = no-cursor,ssh-env
-
-# Visual polish
-minimum-contrast = 1.1
-
-# Mouse
-copy-on-select = clipboard
-mouse-scroll-multiplier = 0.95
-
-# Platform-specific settings (auto-detected by gconfig setup)
-config-file = ?"~/.config/ghostty/platform/current.conf"
-
-# Keybinds (auto-detected by gconfig setup)
-config-file = ?"~/.config/ghostty/keybinds/current.conf"
+# The `vibe` switcher writes a machine-local block here (theme + wallpaper paths).
+# It is intentionally NOT committed — wallpaper paths are per-machine and some
+# wallpapers are third-party/copyright. Local block lives in local.conf (gitignored);
+# ghostty loads it if present. Run `vibe cyberpunk` (etc.) to generate it.
+config-file = ?local.conf
